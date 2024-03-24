@@ -2,65 +2,146 @@ package task.methods;
 
 public class Methods {
     public static void main(String[] args) {
-        // Пример вызова метода
         String string = getString("HELLO");
-        // Ожидаемый результат hello System.out.println(string);
-        // Вызовы ваших методов
+        System.out.println("Проверка возвращаемого значения --> " + string);
+        Methods.getInt1();
+        System.out.println("1)" + "Проверка возвращаемого значения --> " + Methods.getInt1());
+        Methods.getStrings2();
+        System.out.println("2)" + "Проверка возвращаемого значения --> " + Methods.getStrings2());
+        Methods.getStrToNumb3();
+        System.out.println("3)" + "Проверка возвращаемого значения --> " + Methods.getStrToNumb3());
+        Methods.getStrAndNumbrTF4();
+        System.out.println("4)" + "Проверка возвращаемого значения --> " + Methods.getStrAndNumbrTF4());
+        Methods.getDvaBola5();
+        System.out.println("5)" + "Проверка возвращаемого значения --> " + Methods.getDvaBola5());
+        Methods.ChetNeChet6();
+        System.out.println("6)" + "Проверка возвращаемого значения --> " + Methods.ChetNeChet6());
+        Methods.getMassiveChetNeChet7();
+        System.out.println("7)" + "Проверка возвращаемого значения --> " + Methods.getMassiveChetNeChet7());
+        int[] array = getNovblyArray8();
+        System.out.println("8)" + "Проверка возвращаемого значения --> " + array[0] + array[1] + array[2] + array[3]);
+        Methods.getSumArr9();
+        System.out.println("9)" + "Проверка возвращаемого значения --> " + Methods.getSumArr9());
+
 
     }
 
-    // Метод принимающий строку и преобразующий ее в нижний регистр
     public static String getString(String example) {
         return example.toLowerCase();
     }
 
-// Реализуйте функциональность согласно описанию
+    private static int getInt1() {
+        int axes;
+        return axes = 10 + 3;
+    }
 
-// TODO: Создайте метод который вернет сумму двух чисел
+    private static String getStrings2() {
+        String s = "Две";
+        String d = " строки";
+        return s + d;
+    }
 
+    private static String getStrToNumb3() {
+        int y = 100;
+        String x = "16";
+        int z = Integer.parseInt(x.trim());
+        int u = z + y;
+        String str = Integer.toString(u);
+        return str;
+    }
 
-// TODO: Создайте метод который вернет сумму двух переданных строк
-
-
-// TODO: создайте метод который примет строку внутри которой передается число , а также принимает число . Метод должен суммировать числа
-//  обернуть их в строку и вернуть результат строкой
-
-
-// TODO: Создайте метод который принимает строку , число . Внутри строки передается число . Проверить , что если число внутри строки больше чем
-//  число которое передается как int , то пусть метод вернет false , а если меньше , то true
-
-
-// TODO: Создайте метод который принимает 2 булевые переменные . Если обе true , верни true , если хоть одна из них true верни true ,
-//  если обе false верни false
-
-
-// TODO: Создайте метод который принимает число и вернет true если оно четное , и false если оно не четное
-
-
-// TODO: Создайте метод который проверят числа в массиве , если все они четные верни "Массив четных чисел" , если есть и четные и не
-//  четные верни "Массив четных и не четных чисел" и если в массиве только нечетные числа верни "Массив не четных чисел"
-
-
-// TODO: Создайте метод который принимает массив чисел и возвращает новый массив чисел . Внутри метода пройдитесь по элементам
-//  массива который подается в аргументы  и сложите все элементы в новый массив и верните его
-
-
-// TODO: Создайте метод который принимает массив чисел и возвращает число . Внутри метода пройдитесь по элементам массива который подается в
-//  аргументы сложите все числа который переданы в массиве и верните сумму всех чисел
-
-
-// TODO: Создайте методы в которые можно будет передавать свой возраст , а возвращаться сколько полных месяцев в этом возрасте ,
-//  тоесть если человек прожил 10 лет , это 120 месяцевтак же сделайте перевод возраста в минуты и метод который расчетает возраст в часах
+    private static boolean getStrAndNumbrTF4() {
+        int a = 100;
+        String b = "50";
+        int c = Integer.parseInt(b.trim());
+        boolean s;
+        if (c < a) {
+            s = true;
+        } else {
+            s = false;
+        }
+        return s;
+    }
 
 
-// TODO: Создайте метод которому передаю имена , а он проверяет одинаковые ли они , причем не зависимо от регистра
+    private static boolean getDvaBola5() {
+        boolean c;
+        boolean a = false;
+        boolean b = true;
+        if (a == true && b == true) {
+            c = true;
+        } else if (a == false && b == true) {
+            c = true;
+        } else if (a == true && b == false) {
+            c = true;
+        } else {
+            c = false;
+        }
+        return c;
+    }
 
+    private static boolean ChetNeChet6() {
+        int v = 6;
+        boolean o;
+        if (v % 2 == 0) {
+            o = true;
+        } else {
+            o = false;
+        }
 
-// TODO: Создайте метод которому можно передать массив элементов , а он вернет последний элемент
+        return o;
+    }
 
+    private static String getMassiveChetNeChet7() {
+        int[] numbers = {1, 3, 5, 7}; //new int[5];
+        int chet = 0;
+        int neChet = 0;  //если нужно с значениями по порядку в массиве, убрать комментарии
+        String a = null;
+//        for (int i = 0; i < numbers.length; i++) {
+//            numbers[i] = i + 1;
+//
+//        }
+        for (int job : numbers) {
+            if (job % 2 == 0) {
+                chet++;
+            } else {
+                neChet++;
+            }
+        }
+        if (chet > 0 && neChet == 0) {
+            a = "Массив четных чисел";
+        } else if (chet == 0 && neChet > 0) {
+            a = "Массив не четных чисел";
+        } else {
+            a = "Массив четных и не четных чисел";
+        }
 
-// TODO: Создайте метод счетчик букв А . Подается строка и метод посчитает сколько букв А в строке
+        return a;
+    }
 
+    private static int[] getNovblyArray8() {
+        int[] a = {2, 4, 6, 8};
+        int[] b = new int[4];
+        for (int i = 0; i < b.length; i++) {
+            for (int x : a) {
+                b[i] = a[i];
+            }
+        }
+//        for (int i = 0; i < b.length; i++) {
+//            System.out.print(b[i]);
+//        }
+        return b;
+    }
 
-// TODO: Создайте метод кошелек , у него есть началная сумма и можно вычитать пока деньги не кончатся или сумма не будет слишком велика
+    private static int getSumArr9() {
+        int sum = 0;
+        int[] array1 = {1, 1, 1, 1, 10, 11};
+        for (int x : array1) {
+            sum = x + sum;
+        }
+
+        return sum;
+    }
 }
+
+
