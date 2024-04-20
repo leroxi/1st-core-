@@ -1,0 +1,10 @@
+public class Manager extends Sotrydnik {
+
+    Manager vova = new Manager("Vova", 19, 'A');
+    public Manager(String n, int v, char d) {
+        super(n, v, d);
+    }
+    private String hobby = "Футбол";
+    private int effectivnost = 85;
+
+}
