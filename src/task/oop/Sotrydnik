@@ -1,0 +1,46 @@
+import java.util.Random;
+
+public abstract class Sotrydnik {
+    private String name;
+    private int vozrast;
+    private char dopysk;
+    private int id;
+
+    public int getRand(){
+        return (int) (Math.random()*6);
+    }
+    public Sotrydnik(String name, int vozrast, char dopysk){
+        this.name = name;
+        this.vozrast = vozrast;
+        this.dopysk = dopysk;
+        this.id = getRand();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getVozrast() {
+        return vozrast;
+    }
+
+    public void setVozrast(int vozrast) {
+        if(vozrast < 0){
+            this.vozrast = 0;
+        }
+        else{
+            this.vozrast = vozrast;
+        }
+    }
+    public char getDopysk() {
+        return dopysk;
+    }
+    public int getId() {
+        return id;
+    }
+}
+
