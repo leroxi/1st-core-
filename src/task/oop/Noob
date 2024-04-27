@@ -1,9 +1,0 @@
-public class Noob extends Sotrydnik {
-
-    public Noob(String n, int v, char d) {
-        super(n, v, d);
-        System.out.println(n + " " + v + " "+ d);
-
-    }
-
-}
