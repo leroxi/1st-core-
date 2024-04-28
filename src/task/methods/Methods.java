@@ -70,7 +70,7 @@ public class Methods {
     }
 
     // TODO: Создайте метод который вернет сумму двух чисел
-    private static int SumOfTwoNumbers() {
+    private static int sumOfTwoNumbers() {
         return 10 + 3;
     }
 
