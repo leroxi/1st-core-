@@ -1,3 +1,4 @@
+package task.oop;
 public class Square extends Figure {
 
 
