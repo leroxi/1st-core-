@@ -1,3 +1,4 @@
+package task.oop;
 public class Manager extends Employee {
     private String hobby;
     public Manager(String name, int age, int id, char accessLevel, String hobby) {
