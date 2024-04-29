@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+package task.oop;
 public class TesterFigure {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
