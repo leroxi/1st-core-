@@ -1,3 +1,4 @@
+package task.oop;
 public class Triangle extends Figure {
 
 
