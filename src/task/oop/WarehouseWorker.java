@@ -1,3 +1,4 @@
+package task.oop;
 public class WarehouseWorker extends Employee {
 
     private int fingers;
