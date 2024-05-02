@@ -1,5 +1,5 @@
-import java.util.Scanner;
 package task.methods;
+import java.util.Scanner;
 
 public class Methods {
 
@@ -97,8 +97,7 @@ public class Methods {
 
 
     private static boolean getEqualityOfData(boolean aa, boolean bb) {
-        return ((aa == true && bb == true) || (aa == false && bb == true) || (aa == true && bb == false));
-
+        return aa && bb;
     }
     // TODO: Создайте метод который принимает число и вернет true если оно четное , и false если оно не четное
 
